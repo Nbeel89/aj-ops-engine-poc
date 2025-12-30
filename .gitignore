@@ -1,0 +1,21 @@
+# Secrets / credentials
+.env
+*.pem
+*.key
+*service_account*
+*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Synthetic data output
+synthetic_data/output/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
