@@ -1,0 +1,32 @@
+project_id: aj-ops-engine-poc-001
+bq_location: me-central1
+
+date_range:
+  start_date: 2024-01-01
+  end_date: 2024-12-31
+
+departments:
+  - { id: news, name: News, group: Editorial }
+  - { id: tv, name: TV Operations, group: Broadcast }
+  - { id: digital, name: Digital Media, group: Digital }
+  - { id: production, name: Production, group: Broadcast }
+  - { id: hr, name: Human Resources, group: Corporate }
+  - { id: finance, name: Finance, group: Corporate }
+  - { id: procurement, name: Procurement, group: Corporate }
+
+platforms:
+  - { id: web, name: Website, group: Digital }
+  - { id: app, name: Mobile App, group: Digital }
+  - { id: youtube, name: YouTube, group: Social }
+  - { id: x, name: X (Twitter), group: Social }
+  - { id: instagram, name: Instagram, group: Social }
+  - { id: tv, name: TV Channel, group: Broadcast }
+
+cost_centers:
+  - { id: cc_news, name: News Cost Center }
+  - { id: cc_tv, name: TV Cost Center }
+  - { id: cc_digital, name: Digital Cost Center }
+  - { id: cc_corp, name: Corporate Cost Center }
+
+currency: QAR
+random_seed: 42
