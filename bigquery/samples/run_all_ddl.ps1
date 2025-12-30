@@ -25,12 +25,14 @@ function Invoke-BqSqlFile {
 
   Write-Host "Running: $SqlPath" -ForegroundColor Yellow
 
-  bq query `
+  $sql = Get-Content $SqlPath -Raw
+
+  $sql | bq query `
     --project_id=$ProjectId `
     --location=$Location `
     --use_legacy_sql=false `
-    --quiet `
-    < $SqlPath
+    --quiet
+
 
   Write-Host "OK: $SqlPath" -ForegroundColor Green
 }
